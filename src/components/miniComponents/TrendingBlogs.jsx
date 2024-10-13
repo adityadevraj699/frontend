@@ -39,7 +39,7 @@ const TrendingBlogs = () => {
         {blogs && blogs.length > 0 ? (
           blogs.slice(0, 6).map((element) => {
             return (
-              <Link className="card" key={element._id}>
+              <Link to={`/blog/${element._id}`} className="card" key={element._id}>
                 <img
                   src={element.mainImage.url}
                   alt="blog"
