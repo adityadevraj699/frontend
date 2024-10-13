@@ -16,7 +16,7 @@ const Login = () => {
     e.preventDefault();
     await axios
       .post(
-        "http://15.206.84.178/:4000/api/v1/user/login",
+        "http://15.206.84.178:4000/api/v1/user/login",
         { email, password, role },
         {
           withCredentials: true,

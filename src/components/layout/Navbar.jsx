@@ -15,7 +15,7 @@ const Navbar = () => {
     setShow(!show);
   };
   
-  const isDashboard = useLocation("http://15.206.84.178:5173/dashboard");
+  const isDashboard = useLocation("http://15.206.84.178:3000/dashboard");
   
   const { mode, setMode, isAuthenticated, user, setIsAuthenticated } = useContext(Context);
   
