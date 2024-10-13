@@ -12,7 +12,7 @@ const SingleBlog = () => {
     const getSingleBlog = async () => {
       try {
         const { data } = await axios.get(
-          `http:///localhost:4000/api/v1/blog/singleblog/${id}`,
+          `http://15.206.84.178:4000/api/v1/blog/singleblog/${id}`,
           { withCredentials: true }
         );
         setBlog(data.blog);

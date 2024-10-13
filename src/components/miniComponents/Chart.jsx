@@ -30,7 +30,7 @@ const Chart = () => {
   useEffect(() => {
     const fetchMyBlogs = async () => {
       const { data } = await axios.get(
-        "http:///localhost:4000/api/v1/blog/myblogs",
+        "http://15.206.84.178:4000/api/v1/blog/myblogs",
         { withCredentials: true }
       );
       setMyBlogs(data.blogs);

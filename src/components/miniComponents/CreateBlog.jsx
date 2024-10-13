@@ -98,7 +98,7 @@ const CreateBlog = () => {
 
     try {
       const { data } = await axios.post(
-        "http:///localhost:4000/api/v1/blog/post",
+        "http://15.206.84.178:4000/api/v1/blog/post",
         formData,
         {
           withCredentials: true,
