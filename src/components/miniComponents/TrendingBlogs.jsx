@@ -37,7 +37,7 @@ const TrendingBlogs = () => {
       <h3>Trending</h3>
       <Carousel responsive={responsive}>
         {blogs && blogs.length > 0 ? (
-          blogs.slice(0, 6).map((element) => {
+          blogs.slice(0, 6, 1).map((element) => {
             return (
               <Link to={`/blog/${element._id}`} className="card" key={element._id}>
                 <img
