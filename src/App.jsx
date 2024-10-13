@@ -24,7 +24,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const { data } = await axios.get(
-          "http://15.206.84.178/:4000/api/v1/user/myprofile",
+          "http://15.206.84.178:4000/api/v1/user/myprofile",
           {
             withCredentials: true,
           }
@@ -40,7 +40,7 @@ const App = () => {
     const fetchBlogs = async () => {
       try {
         const { data } = await axios.get(
-          "http://15.206.84.178/:4000/api/v1/blog/all",
+          "http://15.206.84.178:4000/api/v1/blog/all",
           { withCredentials: true }
         );
         setBlogs(data.allBlogs);
